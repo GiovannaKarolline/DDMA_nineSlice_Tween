@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://c13v3wojpvuwj"]
+
+[ext_resource type="Script" uid="uid://3c0ft03o8klt" path="res://Entrega 1/button.gd" id="1_uwrea"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 208.0
+offset_right = 552.0
+offset_bottom = 231.0
+text = "Label"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 248.0
+offset_right = 616.0
+offset_bottom = 279.0
+placeholder_text = "Insira algo"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 506.0
+offset_top = 294.0
+offset_right = 560.0
+offset_bottom = 325.0
+text = "Botão"
+script = ExtResource("1_uwrea")
+
+[connection signal="text_changed" from="LineEdit" to="LineEdit" method="_on_text_changed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

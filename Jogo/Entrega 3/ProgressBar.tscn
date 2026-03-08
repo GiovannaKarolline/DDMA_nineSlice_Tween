@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddagiv2ahe832"]
+
+[ext_resource type="Script" uid="uid://c63rs6668phux" path="res://progess_bar.gd" id="1_48snb"]
+[ext_resource type="Texture2D" uid="uid://dyxqgfux1u08h" path="res://Entrega 3/circulo_branco.png" id="2_tkimt"]
+[ext_resource type="Texture2D" uid="uid://c6hg44ibvxva6" path="res://Entrega 3/circulo_azul.svg" id="3_7ykiw"]
+
+[node name="ProgressBar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_48snb")
+
+[node name="fundo" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1082.0
+color = Color(0.27, 0.5985, 1, 1)
+
+[node name="ProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 1197.0
+offset_top = 241.0
+offset_right = 1837.0
+offset_bottom = 881.0
+fill_mode = 4
+texture_under = ExtResource("2_tkimt")
+texture_progress = ExtResource("3_7ykiw")
+
+[node name="Nível" type="Label" parent="ProgressBar"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 192.0
+offset_right = 481.0
+offset_bottom = 438.0
+theme_override_font_sizes/font_size = 180
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 545.0
+offset_right = 940.0
+offset_bottom = 642.0
+theme_override_font_sizes/font_size = 48
+placeholder_text = "   Adicione XP"
+
+[node name="Adicionar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 946.0
+offset_top = 545.0
+offset_right = 1054.0
+offset_bottom = 642.0
+theme_override_font_sizes/font_size = 40
+text = "Add"
+
+[node name="LigarTimer" type="Button" parent="."]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 361.0
+offset_right = 739.0
+offset_bottom = 434.0
+theme_override_font_sizes/font_size = 36
+text = "Ligar Timer"
+
+[node name="Timer" type="Timer" parent="LigarTimer"]
+wait_time = 0.1
+
+[connection signal="value_changed" from="ProgressBar" to="." method="_on_progress_bar_value_changed"]
+[connection signal="pressed" from="Adicionar" to="." method="_on_adicionar_pressed"]
+[connection signal="pressed" from="LigarTimer" to="." method="_on_ligar_timer_pressed"]
+[connection signal="timeout" from="LigarTimer/Timer" to="." method="_on_timer_timeout"]
