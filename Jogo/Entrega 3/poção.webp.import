@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6hg44ibvxva6"
-path="res://.godot/imported/circulo_azul.svg-0f46477cb35fd907bf4df51e1426e78c.ctex"
+uid="uid://bim26ibc5fbfp"
+path="res://.godot/imported/poção.webp-619dac7aa79812991a87254be47dba92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entrega 3/circulo_azul.svg"
-dest_files=["res://.godot/imported/circulo_azul.svg-0f46477cb35fd907bf4df51e1426e78c.ctex"]
+source_file="res://Entrega 3/poção.webp"
+dest_files=["res://.godot/imported/poção.webp-619dac7aa79812991a87254be47dba92.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

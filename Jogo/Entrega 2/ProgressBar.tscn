@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://ddagiv2ahe832"]
 
-[ext_resource type="Script" uid="uid://c63rs6668phux" path="res://progess_bar.gd" id="1_48snb"]
-[ext_resource type="Texture2D" uid="uid://dyxqgfux1u08h" path="res://Entrega 3/circulo_branco.png" id="2_tkimt"]
-[ext_resource type="Texture2D" uid="uid://c6hg44ibvxva6" path="res://Entrega 3/circulo_azul.svg" id="3_7ykiw"]
+[ext_resource type="Script" uid="uid://c63rs6668phux" path="res://Entrega 2/progess_bar.gd" id="1_48snb"]
+[ext_resource type="Texture2D" uid="uid://dyxqgfux1u08h" path="res://Entrega 2/circulo_branco.png" id="2_tkimt"]
+[ext_resource type="Texture2D" uid="uid://c6hg44ibvxva6" path="res://Entrega 2/circulo_azul.svg" id="3_7ykiw"]
+
 
 [node name="ProgressBar" type="Control"]
 layout_mode = 3

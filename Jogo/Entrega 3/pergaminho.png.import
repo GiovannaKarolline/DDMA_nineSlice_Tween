@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyxqgfux1u08h"
-path="res://.godot/imported/circulo_branco.png-e794015acc4b4857fbf7b89a09b82181.ctex"
+uid="uid://cc674b404waas"
+path="res://.godot/imported/pergaminho.png-a79964da2327d2d8e93b6262240aa11d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entrega 3/circulo_branco.png"
-dest_files=["res://.godot/imported/circulo_branco.png-e794015acc4b4857fbf7b89a09b82181.ctex"]
+source_file="res://Entrega 3/pergaminho.png"
+dest_files=["res://.godot/imported/pergaminho.png-a79964da2327d2d8e93b6262240aa11d.ctex"]
 
 [params]
 

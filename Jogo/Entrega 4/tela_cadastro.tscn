@@ -1,0 +1,92 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwy17bdoevfx8"]
+
+[ext_resource type="Script" uid="uid://0ny5hbs8rxdy" path="res://Entrega 4/tela_cadastro.gd" id="1_g0trl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0trl"]
+bg_color = Color(0.296745, 0.740855, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[node name="TelaCadastro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g0trl")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.952128, 0.959395, 0.671907, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 231.0
+offset_right = 1441.0
+offset_bottom = 886.0
+mouse_filter = 2
+theme_override_constants/separation = 15
+
+[node name="Titulo" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Cadastro"
+horizontal_alignment = 1
+
+[node name="InputNome" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+placeholder_text = "Nome"
+
+[node name="InputEmail" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+placeholder_text = "E-mail"
+
+[node name="InputSenha" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+placeholder_text = "Senha"
+secret = true
+secret_character = "*"
+
+[node name="InputConfirmarSenha" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+placeholder_text = "Confirmar senha"
+secret = true
+secret_character = "*"
+
+[node name="labelMensagem" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="BotaoCadastrar" type="Button" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_g0trl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g0trl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_g0trl")
+text = "Cadastrar"
+
+[connection signal="pressed" from="VBoxContainer/CenterContainer/BotaoCadastrar" to="." method="_on_botao_cadastrar_pressed"]

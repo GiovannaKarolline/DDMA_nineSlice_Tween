@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://d32y8vwhfohip"]
+
+[ext_resource type="Texture2D" uid="uid://bim26ibc5fbfp" path="res://Entrega 3/poção.webp" id="1_qod82"]
+[ext_resource type="Texture2D" uid="uid://cc674b404waas" path="res://Entrega 3/pergaminho.png" id="2_s1cbk"]
+[ext_resource type="Texture2D" uid="uid://bm8dm8iss3eu7" path="res://Entrega 3/chave.png" id="3_rfdpc"]
+
+[node name="MenuPersonagem" type="Control"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = -9.0
+offset_right = -6.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 14.0
+offset_right = 1919.0
+offset_bottom = 1044.0
+current_tab = 1
+tab_focus_mode = 1
+
+[node name="Status" type="MarginContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Status"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="AtaqueLabel" type="Label" parent="TabContainer/Status/VBoxContainer"]
+layout_mode = 2
+text = "⚔️Ataque: 15"
+
+[node name="DefesaLabel" type="Label" parent="TabContainer/Status/VBoxContainer"]
+layout_mode = 2
+text = "🛡️Defesa: 10"
+
+[node name="VelocidadeLabel" type="Label" parent="TabContainer/Status/VBoxContainer"]
+layout_mode = 2
+text = "🏃‍➡️Velocidade: 8"
+
+[node name="Mochila" type="MarginContainer" parent="TabContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Mochila"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_constants/separation = 10
+
+[node name="poção" type="Button" parent="TabContainer/Mochila/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 100
+text = "Poção"
+icon = ExtResource("1_qod82")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="pergaminho" type="Button" parent="TabContainer/Mochila/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 100
+text = "Pergaminho"
+icon = ExtResource("2_s1cbk")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="chave" type="Button" parent="TabContainer/Mochila/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 100
+text = "Chave"
+icon = ExtResource("3_rfdpc")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
