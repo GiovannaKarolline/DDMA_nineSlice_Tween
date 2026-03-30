@@ -1,0 +1,153 @@
+[gd_scene load_steps=3 format=3 uid="uid://iir78u4i1plq"]
+
+[ext_resource type="Script" uid="uid://b0rx464t4hwh7" path="res://Entrega 5/calculadora.gd" id="1_3ph3v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ce31"]
+bg_color = Color(0.258824, 0.258824, 0.258824, 1)
+
+[node name="Calculadora" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3ph3v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 263.0
+offset_right = 1362.0
+offset_bottom = 779.0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_8ce31")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="expressao_label" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 2
+
+[node name="resultado_label" type="Label" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "0"
+horizontal_alignment = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+columns = 4
+
+[node name="Button_7" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "7"
+
+[node name="Button_8" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "8"
+
+[node name="Button_9" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "9"
+
+[node name="Button_C" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "C"
+
+[node name="Button_4" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "4"
+
+[node name="Button_5" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "5"
+
+[node name="Button_6" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "6"
+
+[node name="Button_0" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "0"
+
+[node name="Button_1" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "1"
+
+[node name="Button_2" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "2"
+
+[node name="Button_3" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "3"
+
+[node name="Button_=" type="Button" parent="VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 36
+text = "="
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+alignment = 1
+
+[node name="Button_+" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 36
+text = "+"
+
+[node name="Button_-" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 36
+text = "-"
+
+[node name="Button_x" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 36
+text = "x"
+
+[node name="Button_÷" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 36
+text = "÷"
