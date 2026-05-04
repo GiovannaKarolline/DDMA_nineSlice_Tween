@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dlrhspcrqcsfx"]
 
-[ext_resource type="Script" uid="uid://btiqwct1gts03" path="res://tela_principal.gd" id="1_caaw1"]
+[ext_resource type="Script" uid="uid://btiqwct1gts03" path="res://Entrega 6/tela_principal.gd" id="1_caaw1"]
 [ext_resource type="Texture2D" uid="uid://d3ic70oyr47jr" path="res://Entrega 6/fantasy_gui_png/button_04_bg.png" id="2_cgc5h"]
 [ext_resource type="Texture2D" uid="uid://vou0v262fqod" path="res://Entrega 6/fantasy_gui_png/button_04_off.png" id="3_3av4f"]
 [ext_resource type="Texture2D" uid="uid://g8pi3uai1er3" path="res://Entrega 6/fantasy_gui_png/scale_01_07.png" id="4_gddbd"]
